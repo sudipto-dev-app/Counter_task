@@ -104,8 +104,8 @@ class _ProducttileState extends State<Producttile> {
                   if (widget.product.quantity == 5){
                     showDialog(context: context, builder: (context){
                      return AlertDialog(
-                       title: Text('Congratulations! You\'ve bought 5 ${widget.product.name
-                       },'),
+                       title: Text('Congratulations!'),
+                      content: Text(' You\'ve bought 5 ${widget.product.name},'),
                       actions: [
                         TextButton(onPressed: (){
                          Navigator.of(context).pop();
